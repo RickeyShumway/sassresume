@@ -1,0 +1,21 @@
+@mixin font-info {
+    font-family: 'PT Sans', sans-serif;
+}
+$maincolor: rgb(67, 67, 67);
+$lightercolor: rgb(79, 79, 79);
+$text-shadow: 1px 2px 3px rgb(63, 58, 113);
+@mixin sub-title {
+    font-size: 1.1em;
+    line-height: 25px;
+    padding-bottom: 15px;
+    color: $maincolor;
+    font-weight: bold;
+}
+
+@mixin para-size {
+    font-size: .9em;
+    color: $lightercolor;
+    word-wrap: break-word;
+}
+
+

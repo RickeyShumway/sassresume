@@ -4,48 +4,134 @@ html, body {
   padding: 0;
   margin: 0;
   background-color: lightcyan;
+  font-family: "PT Sans", sans-serif;
 }
 
 .container {
-  width: 50%;
+  width: 65%;
   background-color: white;
   margin: 0 auto;
 }
 
 .top {
   height: 25vh;
-  background-color: lightgreen;
+  background-color: #274c77;
+  background: linear-gradient(208deg, #020024 0%, #a3cef1 47%, #274c77 91%);
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.divider {
+  border: 2px solid #d8d8d8;
+  height: 1px;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 3em;
+  font-weight: bold;
+  color: white;
+  padding-bottom: 10px;
+  text-shadow: 1px 2px 3px #3f3a71;
+}
+
+.position {
+  font-size: 1.5em;
+  color: white;
+  text-shadow: 1px 2px 3px #3f3a71;
 }
 
 .content {
   height: 75vh;
-  background-color: paleturquoise;
   display: flex;
 }
 
 .left {
   width: 30%;
   height: 100%;
-  background-color: pink;
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
 }
 .left img {
-  width: 7%;
-  height: 7%;
+  width: 20px;
+  height: 20px;
+  padding: 5px 5px 5px 0;
 }
 
 .contact div {
   display: flex;
+  align-items: center;
+  word-wrap: break-word;
+  min-width: 100%;
 }
 
 .right {
   width: 70%;
   height: 100%;
-  background-color: plum;
+  background-color: #e7ecef;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.right .workxp {
+  flex-basis: 70%;
+}
+
+.profile :not(.subtitle), .contact :not(.subtitle), .education :not(.subtitle) {
+  font-size: 0.9em;
+  color: #4f4f4f;
+  word-wrap: break-word;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  white-space: pre-line;
+}
+
+.subtitle {
+  font-size: 1.1em;
+  line-height: 25px;
+  padding-bottom: 15px;
+  color: #434343;
+  font-weight: bold;
+}
+
+.job {
+  padding-bottom: 7px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #4f4f4f;
+}
+
+.date {
+  padding-bottom: 15px;
+  font-size: 0.9em;
+  color: #434343;
+}
+
+ul {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+li {
+  font-size: 0.9em;
+  color: #4f4f4f;
+  word-wrap: break-word;
+  font-size: 0.9em;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,7 @@
+@mixin mainColor    {
+    background-color: black;
+}
+$main-color: #a3cef1;
+$secondary-color: #e7ecef;
+$third-color: #274c77;
+$gradient: linear-gradient(208deg, rgba(2,0,36,1) 0%, rgba(163,206,241,1) 47%, rgba(39,76,119,1) 91%);

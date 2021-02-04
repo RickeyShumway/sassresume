@@ -1,23 +1,51 @@
+@import 'colors';
+@import 'text-info';
+@import 'padmarg';
+
 html, body {
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
     background-color: lightcyan;
+    @include font-info;
 }
-
 .container {
-    width: 50%;
+    width: 65%;
     background-color: white;
     margin: 0 auto;
 }
 .top {
     height: 25vh;
-    background-color: lightgreen;
+    background-color: $third-color;
+    background: $gradient;
+    @include space;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divider {
+    border: 2px solid rgb(216, 216, 216);
+    height: 1px;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 10px;
+
+}
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    padding-bottom: 10px;
+    text-shadow: $text-shadow;
+}
+.position {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: $text-shadow;
 }
 .content {
     height: 75vh;
-    background-color: paleturquoise;
     display: flex;
 
 }
@@ -25,26 +53,71 @@ html, body {
 .left {
     width: 30%;
     height: 100%;
-    background-color: pink;
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include space;
 
     img {
-        width: 7%;
-        height: 7%;
+        width: 20px;
+        height: 20px;
+        padding: 5px 5px 5px 0;
     }
 }
 .contact {
     div {
         display: flex;
+        align-items: center;
+        word-wrap: break-word;
+        min-width: 100%;
     }
 }
 .right {
     width: 70%;
     height: 100%;
-    background-color: plum;
+    background-color: $secondary-color;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    @include space;
+    .workxp {
+        flex-basis: 70%;
+    }
+}
+.profile, .contact, .education, {
+    :not(.subtitle) {
+        @include para-size;
+    }
+    
+}
+.contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    white-space: pre-line;
+}
+.subtitle {
+    @include sub-title;
 
+}
+.job {
+    padding-bottom: 7px;
+    font-size: 1em;
+    font-weight: bold;
+    color: $lightercolor;
+}
+.date {
+    padding-bottom: 15px;
+    font-size: .9em;
+    color: $maincolor;
+}
+ul {
+    padding-top: 0;
+    margin-top: 0;
+}
+li {
+    @include para-size;
+    font-size: .9em;
+    
 }
